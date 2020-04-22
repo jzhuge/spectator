@@ -6,6 +6,7 @@ dependencies {
   api project(':spectator-api')
   api project(':spectator-ext-gc')
   api project(':spectator-ext-jvm')
+  implementation project(':spectator-reg-metrics3')
   implementation "com.eclipsesource.minimal-json:minimal-json"
   implementation "com.typesafe:config"
   implementation 'io.dropwizard.metrics:metrics-core:3.1.2'
@@ -30,6 +31,7 @@ shadowJar {
     include project(':spectator-api')
     include project(':spectator-ext-gc')
     include project(':spectator-ext-jvm')
+    include project(':spectator-reg-metrics3')
     include dependency("com.eclipsesource.minimal-json:minimal-json")
     include dependency("com.typesafe:config")
   }
