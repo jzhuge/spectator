@@ -3,6 +3,7 @@ plugins {
 }
 
 apply plugin: 'netflix.nebula'
+apply plugin: 'nebula.release'
 
 dependencies {
   api project(':spectator-api')
